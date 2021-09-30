@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Mídia em HTML5</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="topo"><span>Imagem dinâmica</span></h1>
+            <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+                <img src="imagens/foto-g.png" alt="Imagem-G">
+            </picture>
+        </div>
+        <audio preload="metadata" controls autoplay loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogv">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <p>Seu navegador não suporta áudio <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Clique aqui para fazer o download</a></p>
+        </audio>
+        <p><a href="#topo">Voltar para o topo</a></p>
+    </body>
+
+</html>
