@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    border: 12px solid transparent;
+    padding: 10px;
+    border-image: url('borda.png') 27 repeat;
+}
+
+p a {
+    text-decoration: none;
+    color: white;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    background: black;
+}

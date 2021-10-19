@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus {
+    text-decoration: line-through;
+}
+
+a:visited {
+    color: darkred;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+a:active {
+    color: yellow;
+}
+
+.especial {
+    background-color: #FF8C8C;
+}
+.especial::before {
+    content: '⇒ ';
+}
+
+.especial::after {
+    content: ' ⇐';
+}

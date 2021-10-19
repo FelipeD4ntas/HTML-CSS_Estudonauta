@@ -37,3 +37,7 @@ p a {
     background-color: rgba(130, 252, 252, 0.596);
     font-weight: 700;
 }
+
+.titulo {
+    color: black;
+}
