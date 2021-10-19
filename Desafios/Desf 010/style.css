@@ -48,6 +48,9 @@ header {
 }
 
 .topo h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-weight: 400;
     font-family: var(--font1);
