@@ -33,7 +33,7 @@ header {
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.507);
     max-width: 100%;
     min-width: 400px;
-    height: 40vh;
+    height: 300px;
 }
 
 .topo {
@@ -52,20 +52,19 @@ header {
 .topo h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     font-weight: 400;
     font-family: var(--font1);
-    height: 40%;
-    margin-top: 20px;
+    height: 60%;
+    margin: auto 0px;
     font-size: 3em;
 }
 
 .topo p {
-    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    height: 20%;
     margin: 15px auto;
     font-size: 1.2em;
 }
@@ -110,8 +109,13 @@ main {
     border-radius: 0px 0px 10px 10px;
     background: white;
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 400px;
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.336);
+}
+
+span {
+    font-weight: bold;
+    color: var(--cor4);
 }
 
 main h1 {
@@ -121,6 +125,7 @@ main h1 {
     font-family: var(--font2);
     font-weight: 400;
     font-size: 1.9em;
+    text-align: center;
     color: var(--cor5)
 }
 
@@ -134,10 +139,11 @@ main p {
 main h2 {
     display: flex;
     justify-content: flex-start;
-    text-indent: 8px;
+    text-indent: 0.5em;
     font-family: var(--font2);
     font-weight: 400;
     font-size: 1.3em;
+    text-align: left;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
 }
@@ -154,13 +160,16 @@ main .externo::after {
     content: '\00A0\1F517';
 }
 
+main .externo:hover {
+    text-decoration: underline;
+}
+
 .droids {
     display: flex;
     justify-content: center;
-    height: 320px;
 }
 
-span {
-    font-weight: bold;
-    color: var(--cor4);
+.droids img {
+    height: auto;
+    max-width: 100%;
 }
