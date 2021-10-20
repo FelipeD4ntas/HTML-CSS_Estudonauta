@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Idroid';
-    src: url('C:\Users\Felipe\Desktop\ESTUDOS\Front End\HTML5 Curso em Video\___Estudonauta\__HTML-CSS\Desafios\Desf 010\fontes\Idroid.otf') format(opentype);
+    src: url('fontes/Idroid.otf') format('opentype');
 }
 
 * {
@@ -21,16 +21,15 @@ body {
     --cor1: #83E1AD;
     --cor2: #3DDC84;
     --cor3: #2FA866;
-    --cor4: #063D1E;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
     --font0: Arial, Helvetica, sans-serif;
     --font1: 'Bebas Neue', cursive;
     --font2: 'Idroid', sans-serif;
 }
 
 header {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.507);
     max-width: 100%;
     min-width: 400px;
@@ -44,7 +43,7 @@ header {
     height: 80%;
     padding: 10px;
     margin: 0px auto;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.562);
 }
 
 .topo h1 {
@@ -55,8 +54,7 @@ header {
     font-weight: 400;
     font-family: var(--font1);
     height: 40%;
-    padding: 10px;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 3em;
 }
 
@@ -80,7 +78,7 @@ nav {
 nav #menu {
     display: flex;
     justify-content: flex-start;
-    margin: auto 10px;
+    margin: 10px 10px;
 }
 
 nav #menu li {
@@ -97,6 +95,69 @@ nav #menu li a {
 }
 
 nav #menu li a:hover {
-    background: var(--cor0);
+    background: var(--cor3);
+    color: var(--cor5);
     border-radius: 6px;
+    transition: color 0.6s;
+}
+
+main {
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    background: white;
+    max-width: 1000px;
+    min-width: 300px;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.336);
+}
+
+main h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 1.9em;
+    color: var(--cor5)
+}
+
+main p {
+    margin: 15px 0px;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+main h2 {
+    display: flex;
+    justify-content: flex-start;
+    text-indent: 8px;
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 1.3em;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
+}
+
+main .externo {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background: var(--cor1);
+    padding: 2px 6px;
+}
+
+main .externo::after {
+    content: '\00A0\1F517';
+}
+
+.droids {
+    display: flex;
+    justify-content: center;
+    height: 320px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--cor4);
 }
