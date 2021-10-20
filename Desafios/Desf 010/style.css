@@ -37,6 +37,9 @@ header {
 }
 
 .topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     color: white;
     max-width: 650px;
     min-width: 400px;
@@ -54,7 +57,7 @@ header {
     font-weight: 400;
     font-family: var(--font1);
     height: 40%;
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 3em;
 }
 
@@ -62,7 +65,7 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
-    height: 40%;
+    justify-content: center;
     margin: 15px auto;
     font-size: 1.2em;
 }
