@@ -150,7 +150,7 @@ main h2 {
     background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
 }
 
-main .externo {
+.externo {
     text-decoration: none;
     font-weight: bold;
     color: var(--cor5);
@@ -158,11 +158,11 @@ main .externo {
     padding: 2px 6px;
 }
 
-main .externo::after {
+.externo::after {
     content: '\00A0\1F517';
 }
 
-main .externo:hover {
+.externo:hover {
     text-decoration: underline;
 }
 
@@ -187,28 +187,26 @@ main .externo:hover {
 }
 
 .video {
-    background: var(--cor5);
     position: relative;
-    padding-bottom: 56.25%;
+    background: var(--cor5);
     height: 0px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin: 0px -20px;
     margin-bottom: 15px;
+    padding-bottom: 56.25%;
 }
 
 .video iframe {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
     height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
 }
 
 aside {
     background: var(--cor1);
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px;
     box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.507);
 }
 
@@ -216,10 +214,27 @@ aside h3 {
     background: var(--cor4);
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
+    margin: 0px -10px;
     color: white;
 }
-/* footer {
+
+.versoes {
+    list-style-type: '\2714\0020\0020';
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside p .externo {
+    background: var(--cor3);
+}
+
+footer {
+    background: var(--cor5);
+    margin-top: 15px;
+    max-width: 100%;
+    min-width: 400px;
     height: 10%;
-} 
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
