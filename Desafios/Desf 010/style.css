@@ -104,6 +104,10 @@ nav #menu li a:hover {
     transition: color 0.6s;
 }
 
+.fale {
+    text-align: center;
+}
+
 main {
     margin: auto;
     padding: 20px;
