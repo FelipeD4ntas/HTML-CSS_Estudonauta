@@ -164,6 +164,7 @@ main h2 {
 
 .externo:hover {
     text-decoration: underline;
+    color: var(--cor4);
 }
 
 .imagem {
@@ -207,7 +208,7 @@ aside {
     background: var(--cor1);
     border-radius: 10px;
     padding: 0px 10px;
-    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.507);
+    box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.507);
 }
 
 aside h3 {
@@ -230,11 +231,23 @@ aside p .externo {
 
 footer {
     background: var(--cor5);
-    margin-top: 15px;
+    margin-top: 30px;
     max-width: 100%;
     min-width: 400px;
     height: 10%;
     color: white;
     text-align: center;
-    padding: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.link-footer {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
