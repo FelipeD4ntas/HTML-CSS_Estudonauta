@@ -2,7 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'Idroid';
-    src: url('fontes/Idroid.otf') format('opentype');
+    src: url('../fontes/Idroid.otf') format('opentype');
+}
+
+:root {
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+    --cor-de-fundo: #EBE5C5;
+    --font0: Arial, Verdana, Helvetica, sans-serif;
+    --font1: 'Bebas Neue', cursive;
+    --font2: 'Idroid', sans-serif;
 }
 
 * {
@@ -13,19 +26,7 @@
 }
 
 body {
-    background: #EBE5C5;
-}
-
-:root {
-    --cor0: #C5EBD6;
-    --cor1: #83E1AD;
-    --cor2: #3DDC84;
-    --cor3: #2FA866;
-    --cor4: #1A5C37;
-    --cor5: #063D1E;
-    --font0: Arial, Helvetica, sans-serif;
-    --font1: 'Bebas Neue', cursive;
-    --font2: 'Idroid', sans-serif;
+    background: var(--cor-de-fundo);
 }
 
 header {
@@ -47,7 +48,7 @@ header {
     height: 80%;
     padding: 10px;
     margin: 0px auto;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.562);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.400);
 }
 
 .topo h1 {
@@ -66,7 +67,7 @@ header {
     align-items: center;
     text-align: center;
     height: auto;
-    margin: 15px auto;
+    margin: 20px auto;
     font-size: 1.2em;
 }
 
@@ -115,7 +116,7 @@ main {
     max-width: 1050px;
     min-width: 300px;
     height: 60%;
-    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.336);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.418);
 }
 
 span {
@@ -129,16 +130,9 @@ main h1 {
     margin-bottom: 15px;
     font-family: var(--font2);
     font-weight: 400;
-    font-size: 1.9em;
+    font-size: 1.8em;
     text-align: center;
     color: var(--cor5)
-}
-
-main p {
-    margin: 15px 0px;
-    line-height: 2em;
-    text-align: justify;
-    text-indent: 2em;
 }
 
 main h2 {
@@ -148,9 +142,16 @@ main h2 {
     font-family: var(--font2);
     font-weight: 400;
     font-size: 1.3em;
-    text-align: left;
+    text-align: center;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
+}
+
+main p {
+    margin: 15px 0px;
+    line-height: 2em;
+    text-align: justify;
+    text-indent: 2em;
 }
 
 .externo {
@@ -162,7 +163,7 @@ main h2 {
 }
 
 .externo::after {
-    content: '\00A0\1F517';
+    content: '\0020\1F517';
 }
 
 .externo:hover {
@@ -188,6 +189,7 @@ main h2 {
 .bugdroid img {
     height: auto;
     max-width: 100%;
+    flex-grow: 0.1;
 }
 
 .video {
@@ -211,7 +213,7 @@ aside {
     background: var(--cor1);
     border-radius: 10px;
     padding: 0px 10px;
-    box-shadow: 2px 1px 10px 0px rgba(0, 0, 0, 0.507);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.315);
 }
 
 aside h3 {
