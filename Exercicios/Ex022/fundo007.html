@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alinhamento Vertical</title>
+        <style>
+            .fora {
+                background: #800080 url('imagens/target001.png') center center no-repeat;
+                background-size: 100% 100%;
+                height: 96vh;
+                padding: 10px;
+                position: relative;
+                min-width: 400px;
+            }
+            
+            .dentro {
+                width: 400px;
+                height: 200px;
+                background: #FFFF00 url('imagens/target001.png') center center no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fora">
+            <div class="dentro"></div>
+        </div>
+    </body>
+</html>
