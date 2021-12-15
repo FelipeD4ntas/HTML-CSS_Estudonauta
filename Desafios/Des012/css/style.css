@@ -12,6 +12,11 @@
 a {
     text-decoration: none;
     color: var(--cor02);
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--cor02);
 }
 
 :root {
@@ -30,15 +35,10 @@ header {
 header h1{
     color: var(--cor02);
     text-align: center;
-    text-transform: uppercase;
+    font-variant: small-caps;
     font-family: var(--font01);
-    font-size: 7vw;
-    word-spacing: 0.5vw;
-    padding-top: 50px;
-}
-
-header h1 span {
     font-size: 10vw;
+    padding-top: 50px;
 }
 
 header p {
@@ -48,19 +48,17 @@ header p {
     padding-bottom: 50px;
 }
 
-header p a {
-    font-weight: bold;
-}
-
 /* MAIN */
 
 main p {
     font-family: var(--font02);
-    font-size: 3.5vw;;
+    font-size: 3.5vw;
+    line-height: 2em;
 }
 
 .versos {
-    padding: 60px 30px;
+    padding: 10vh 30px;
+   
 }
 
 .versos p:nth-child(2) {
@@ -72,6 +70,7 @@ main p {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.600);
 }
 
 .versos.box-img.dois {
@@ -79,13 +78,16 @@ main p {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.600);
 }
 
 .versos.box-img p {
     color: var(--cor02);
+    text-shadow: 1px 1px 0px black;
     padding: 10px 5px;
     width: max-content;
     background: rgba(0, 0, 0, 0.377);
+    border-radius: 5px;
 }
 
 /* FOOTER */
@@ -99,8 +101,4 @@ footer p {
     color: var(--cor02);
     padding: 10px;
     font-family: var(--font03);
-}
-
-footer p a {
-    font-weight: bold;
 }
