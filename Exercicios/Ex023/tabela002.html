@@ -11,6 +11,7 @@
         table {
             border-collapse: collapse;
             width: 500px;
+            position: relative;
         }
        caption {
             background: #D3D3D3;
@@ -24,7 +25,7 @@
         }
         thead {
             position: sticky;
-            top: 0;
+            top: -1px;
         }
         td {
             padding: 10px;
@@ -42,7 +43,7 @@
         th:first-child {
             width: 380px;
         }
-        tr:nth-child(even) {
+        tbody tr:nth-child(even) {
             background: #D3D3D3;
         }
     </style>
